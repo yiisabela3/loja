@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#product-list {
+    flex: 1;
+}
+
+#admin-panel {
+    flex: 0.3;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Adicione mais estilos conforme necessário */
+
+/* Estilo para a seção que contém os produtos */
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 produtos por linha */
+    gap: 20px; /* Espaço entre os produtos */
+}
+
+/* Estilo para cada item do produto */
+.product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-item h2 {
+    font-size: 1.2rem;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
